@@ -1,17 +1,92 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="ソース ファイル">
-      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
-      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
-    </Filter>
-    <Filter Include="ヘッダー ファイル">
-      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
-      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
-    </Filter>
-    <Filter Include="リソース ファイル">
+    <Filter Include="Lib">
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Source">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source\Bell">
+      <UniqueIdentifier>{1b60914e-84d2-4f84-983e-7a078819bcd9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Bell\Encoding">
+      <UniqueIdentifier>{2a052996-8adf-4b23-8a50-b27c921de165}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Lib\Google">
+      <UniqueIdentifier>{3a4f7bc5-2e1a-4c7d-be61-7682054e8e8d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Test">
+      <UniqueIdentifier>{e3b236f7-235d-4ed3-8b03-61fd8934babf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Test\Bell">
+      <UniqueIdentifier>{040e2932-c280-4436-bab5-0cf6b1505893}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Test\Bell\Encoding">
+      <UniqueIdentifier>{48f5aea1-9648-4f19-ad83-bf15ef92845e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\Main.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Test\Bell\Encoding\Test_ToUtf8.cpp">
+      <Filter>Test\Bell\Encoding</Filter>
+    </ClCompile>
+    <ClCompile Include="Test\Bell\Encoding\Test_ToUtf16.cpp">
+      <Filter>Test\Bell\Encoding</Filter>
+    </ClCompile>
+    <ClCompile Include="Test\Bell\Encoding\Test_ToUtf32.cpp">
+      <Filter>Test\Bell\Encoding</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Bell\Encoding\ToUtf8.cpp">
+      <Filter>Source\Bell\Encoding</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Bell\Encoding\ToUtf16.cpp">
+      <Filter>Source\Bell\Encoding</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Bell\Encoding\ToUtf32.cpp">
+      <Filter>Source\Bell\Encoding</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Bell\Encoding\ToWide.cpp">
+      <Filter>Source\Bell\Encoding</Filter>
+    </ClCompile>
+    <ClCompile Include="Test\Bell\Encoding\Test_ToWide.cpp">
+      <Filter>Test\Bell\Encoding</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Source\Bell\Encoding.hpp">
+      <Filter>Source\Bell</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Bell\Encoding\Encoding.hpp">
+      <Filter>Source\Bell\Encoding</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Bell\Encoding\ToUtf8.hpp">
+      <Filter>Source\Bell\Encoding</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Bell\Encoding\ToUtf16.hpp">
+      <Filter>Source\Bell\Encoding</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Bell\Encoding\ToUtf32.hpp">
+      <Filter>Source\Bell\Encoding</Filter>
+    </ClInclude>
+    <ClInclude Include="Lib\Google\array_ref.hpp">
+      <Filter>Lib\Google</Filter>
+    </ClInclude>
+    <ClInclude Include="Lib\Google\string_ref.hpp">
+      <Filter>Lib\Google</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Bell\Encoding\ToWide.hpp">
+      <Filter>Source\Bell\Encoding</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="README.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="LICENSE_1_0.txt" />
   </ItemGroup>
 </Project>

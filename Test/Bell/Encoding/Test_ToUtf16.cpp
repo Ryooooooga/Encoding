@@ -19,3 +19,8 @@ TEST(Bell_Encoding_ToUtf16, FromUtf32)
 {
 	EXPECT_EQ(u"abcABC123あいう", Bell::Encoding::toUtf16(U"abcABC123あいう"));
 }
+
+TEST(Bell_Encoding_ToUtf16, FromWide)
+{
+	EXPECT_EQ(u"abcABC123あいう", Bell::Encoding::toUtf16(L"abcABC123あいう"));
+}

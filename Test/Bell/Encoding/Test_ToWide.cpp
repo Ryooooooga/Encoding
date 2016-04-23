@@ -8,19 +8,19 @@
 //=====================================================================
 
 #include <gtest/gtest.h>
-#include "../../../Source/Bell/Encoding/ToUtf32.hpp"
+#include "../../../Source/Bell/Encoding/ToWide.hpp"
 
-TEST(Bell_Encoding_ToUtf32, FromUtf8)
+TEST(Bell_Encoding_ToWide, FromUtf8)
 {
-	EXPECT_EQ(U"abcABC123あいう", Bell::Encoding::toUtf32(u8"abcABC123あいう"));
+	EXPECT_EQ(L"abcABC123あいう", Bell::Encoding::toWide(u8"abcABC123あいう"));
 }
 
-TEST(Bell_Encoding_ToUtf32, FromUtf16)
+TEST(Bell_Encoding_ToWide, FromUtf16)
 {
-	EXPECT_EQ(U"abcABC123あいう", Bell::Encoding::toUtf32(u"abcABC123あいう"));
+	EXPECT_EQ(L"abcABC123あいう", Bell::Encoding::toWide(u"abcABC123あいう"));
 }
 
-TEST(Bell_Encoding_ToUtf32, FromWide)
+TEST(Bell_Encoding_ToWide, FromUtf32)
 {
-	EXPECT_EQ(U"abcABC123あいう", Bell::Encoding::toUtf32(L"abcABC123あいう"));
+	EXPECT_EQ(L"abcABC123あいう", Bell::Encoding::toWide(U"abcABC123あいう"));
 }

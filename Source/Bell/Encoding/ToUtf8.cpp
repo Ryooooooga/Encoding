@@ -37,4 +37,11 @@ namespace Bell { namespace Encoding {
 #endif	//	_MSC_VER
 	}
 
+	/** Wide => UTF-8 */
+	std::string toUtf8(std::wstring_ref wide)
+	{
+		std::wstring_convert<std::codecvt_utf8<wchar_t>, wchar_t> conv;
+		return conv.to_bytes(wide.begin(), wide.end());
+	}
+
 }}	//	namespace Bell::Encoding

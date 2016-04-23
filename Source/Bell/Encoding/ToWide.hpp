@@ -14,31 +14,31 @@
 namespace Bell { namespace Encoding {
 
 	/**
-	 * @brief      UTF-16 => UTF8
+	 * @brief      UTF-8 => Wide
+	 *
+	 * @param[in]  u8    UTF-8
+	 *
+	 * @return     Wide Character Set
+	 */
+	std::wstring toWide(std::string_ref u8);
+
+	/**
+	 * @brief      UTF-16 => Wide
 	 *
 	 * @param[in]  u16   UTF-16
 	 *
-	 * @return     UTF-8
+	 * @return     Wide Character Set
 	 */
-	std::string toUtf8(std::u16string_ref u16);
+	std::wstring toWide(std::u16string_ref u16);
 
 	/**
-	 * @brief      UTF-32 => UTF8
+	 * @brief      UTF-32 => Wide
 	 *
 	 * @param[in]  u32   UTF-32
 	 *
-	 * @return     UTF-8
+	 * @return     Wide Character Set
 	 */
-	std::string toUtf8(std::u32string_ref u32);
-
-	/**
-	 * @brief      Wide => UTF-8
-	 *
-	 * @param[in]  wide  Wide Character Set
-	 *
-	 * @return     UTF-8
-	 */
-	std::string toUtf8(std::wstring_ref wide);
+	std::wstring toWide(std::u32string_ref u32);
 
 }}	//	namespace Bell::Encoding
 

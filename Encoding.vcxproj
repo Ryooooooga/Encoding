@@ -146,6 +146,31 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Source\Bell\Encoding\ToUtf16.cpp" />
+    <ClCompile Include="Source\Bell\Encoding\ToUtf32.cpp" />
+    <ClCompile Include="Source\Bell\Encoding\ToUtf8.cpp" />
+    <ClCompile Include="Source\Bell\Encoding\ToWide.cpp" />
+    <ClCompile Include="Source\Main.cpp" />
+    <ClCompile Include="Test\Bell\Encoding\Test_ToUtf16.cpp" />
+    <ClCompile Include="Test\Bell\Encoding\Test_ToUtf32.cpp" />
+    <ClCompile Include="Test\Bell\Encoding\Test_ToUtf8.cpp" />
+    <ClCompile Include="Test\Bell\Encoding\Test_ToWide.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Lib\Google\array_ref.hpp" />
+    <ClInclude Include="Lib\Google\string_ref.hpp" />
+    <ClInclude Include="Source\Bell\Encoding.hpp" />
+    <ClInclude Include="Source\Bell\Encoding\Encoding.hpp" />
+    <ClInclude Include="Source\Bell\Encoding\ToUtf16.hpp" />
+    <ClInclude Include="Source\Bell\Encoding\ToUtf32.hpp" />
+    <ClInclude Include="Source\Bell\Encoding\ToUtf8.hpp" />
+    <ClInclude Include="Source\Bell\Encoding\ToWide.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="README.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="LICENSE_1_0.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
