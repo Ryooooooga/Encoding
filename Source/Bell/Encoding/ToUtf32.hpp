@@ -9,7 +9,7 @@
 
 #pragma once
 
-#include <Google/string_ref.hpp>
+#include <boost/utility/string_ref.hpp>
 
 namespace Bell { namespace Encoding {
 
@@ -20,7 +20,7 @@ namespace Bell { namespace Encoding {
 	 *
 	 * @return     UTF-32
 	 */
-	std::u32string toUtf32(std::string_ref u8);
+	std::u32string toUtf32(boost::string_ref u8);
 
 	/**
 	 * @brief      UTF-16 => UTF32
@@ -29,7 +29,7 @@ namespace Bell { namespace Encoding {
 	 *
 	 * @return     UTF-16
 	 */
-	std::u32string toUtf32(std::u16string_ref u16);
+	std::u32string toUtf32(boost::u16string_ref u16);
 
 	/**
 	 * @brief      Wide => UTF-32
@@ -38,7 +38,7 @@ namespace Bell { namespace Encoding {
 	 *
 	 * @return     UTF-32
 	 */
-	std::u32string toUtf32(std::wstring_ref wide);
+	std::u32string toUtf32(boost::wstring_ref wide);
 
 }}	//	namespace Bell::Encoding
 

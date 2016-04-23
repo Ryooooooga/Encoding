@@ -157,8 +157,6 @@
     <ClCompile Include="Test\Bell\Encoding\Test_ToWide.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Lib\Google\array_ref.hpp" />
-    <ClInclude Include="Lib\Google\string_ref.hpp" />
     <ClInclude Include="Source\Bell\Encoding.hpp" />
     <ClInclude Include="Source\Bell\Encoding\Encoding.hpp" />
     <ClInclude Include="Source\Bell\Encoding\ToUtf16.hpp" />
