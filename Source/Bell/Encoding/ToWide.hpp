@@ -11,7 +11,7 @@
 
 #include <boost/utility/string_ref.hpp>
 
-namespace Bell { namespace Encoding {
+namespace Bell::Encoding {
 
 	/**
 	 * @brief      UTF-8 => Wide
@@ -40,5 +40,4 @@ namespace Bell { namespace Encoding {
 	 */
 	std::wstring toWide(boost::u32string_ref u32);
 
-}}	//	namespace Bell::Encoding
-
+}	//	namespace Bell::Encoding

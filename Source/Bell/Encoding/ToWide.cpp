@@ -12,7 +12,7 @@
 #include <locale>
 #include <codecvt>
 
-namespace Bell { namespace Encoding {
+namespace Bell::Encoding {
 
 	/** UTF-8 => Wide */
 	std::wstring toWide(boost::string_ref u8)
@@ -33,4 +33,4 @@ namespace Bell { namespace Encoding {
 		return toWide(toUtf8(u32));
 	}
 
-}}	//	namespace Bell::Encoding
+}	//	namespace Bell::Encoding

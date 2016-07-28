@@ -12,7 +12,7 @@
 #include <locale>
 #include <codecvt>
 
-namespace Bell { namespace Encoding {
+namespace Bell::Encoding {
 
 	/** UTF-8 => UTF-32 */
 	std::u32string toUtf32(boost::string_ref u8)
@@ -40,4 +40,4 @@ namespace Bell { namespace Encoding {
 		return toUtf32(toUtf8(wide));
 	}
 
-}}	//	namespace Bell::Encoding
+}	//	namespace Bell::Encoding

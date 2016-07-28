@@ -11,7 +11,7 @@
 
 #include <boost/utility/string_ref.hpp>
 
-namespace Bell { namespace Encoding {
+namespace Bell::Encoding {
 
 	/**
 	 * @brief      UTF-8 => UTF16
@@ -40,5 +40,4 @@ namespace Bell { namespace Encoding {
 	 */
 	std::u16string toUtf16(boost::wstring_ref wide);
 
-}}	//	namespace Bell::Encoding
-
+}	//	namespace Bell::Encoding
