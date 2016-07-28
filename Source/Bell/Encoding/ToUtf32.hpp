@@ -1,4 +1,4 @@
-﻿//=====================================================================
+//=====================================================================
 // Copyright (c) 2015-2016 Ryooooooga.
 // https://github.com/Ryooooooga
 //
@@ -9,7 +9,7 @@
 
 #pragma once
 
-#include <boost/utility/string_ref.hpp>
+#include <boost/utility/string_view.hpp>
 
 namespace Bell::Encoding {
 
@@ -20,7 +20,7 @@ namespace Bell::Encoding {
 	 *
 	 * @return     UTF-32
 	 */
-	std::u32string toUtf32(boost::string_ref u8);
+	std::u32string toUtf32(boost::string_view u8);
 
 	/**
 	 * @brief      UTF-16 => UTF32
@@ -29,7 +29,7 @@ namespace Bell::Encoding {
 	 *
 	 * @return     UTF-16
 	 */
-	std::u32string toUtf32(boost::u16string_ref u16);
+	std::u32string toUtf32(boost::u16string_view u16);
 
 	/**
 	 * @brief      Wide => UTF-32
@@ -38,6 +38,6 @@ namespace Bell::Encoding {
 	 *
 	 * @return     UTF-32
 	 */
-	std::u32string toUtf32(boost::wstring_ref wide);
+	std::u32string toUtf32(boost::wstring_view wide);
 
 }	//	namespace Bell::Encoding

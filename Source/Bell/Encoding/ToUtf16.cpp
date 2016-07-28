@@ -15,7 +15,7 @@
 namespace Bell::Encoding {
 
 	/** UTF-8 => UTF-16 */
-	std::u16string toUtf16(boost::string_ref u8)
+	std::u16string toUtf16(boost::string_view u8)
 	{
 #ifdef _MSC_VER
 		std::wstring_convert<std::codecvt_utf8<__int16>, __int16> conv;
@@ -29,13 +29,13 @@ namespace Bell::Encoding {
 	}
 
 	/** UTF-32 => UTF-16 */
-	std::u16string toUtf16(boost::u32string_ref u32)
+	std::u16string toUtf16(boost::u32string_view u32)
 	{
 		return toUtf16(toUtf8(u32));
 	}
 
 	/** Wide => UTF-16 */
-	std::u16string toUtf16(boost::wstring_ref wide)
+	std::u16string toUtf16(boost::wstring_view wide)
 	{
 		return toUtf16(toUtf8(wide));
 	}
