@@ -12,3 +12,4 @@
 #include "ToUtf8.hpp"
 #include "ToUtf16.hpp"
 #include "ToUtf32.hpp"
+#include "ToWide.hpp"
